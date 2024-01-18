@@ -5,11 +5,11 @@ body {margin: 0; }
 /* GLOBAL COLORS */
 body { color:rgba(0, 0, 0, 0.8); }
 a { color: rgba(255, 58, 75); }
-a:hover { color: rgb(217, 77, 88); }
+a:hover { color: rgba(217, 77, 88); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -18,7 +18,7 @@ body {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgb(255, 58, 75);
+    background-color: rgba(255, 58, 75);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -26,10 +26,10 @@ header {
     align-items: center;
 }
 
-header a{
+header a {
     color:rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
-
 
 header a:hover {
     color: rgba(255, 255, 255, 1);
@@ -64,7 +64,7 @@ main {
 .hero {
     background-color: rgba(255, 58, 75);
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 1);
     padding: 6em 1em;
 }
 
