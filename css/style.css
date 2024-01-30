@@ -4,8 +4,8 @@ body {margin: 0; }
 
 /* GLOBAL COLORS */
 body { color:rgba(0, 0, 0, 0.8); }
-a { color: rgba(255, 58, 75); }
-a:hover { color: rgba(217, 77, 88); }
+a { color: rgba(30, 139, 195); }
+a:hover { color: rgba(44, 130, 201); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -18,7 +18,7 @@ body {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgba(255, 58, 75);
+    background-color: rgba(30, 139, 195);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -27,12 +27,12 @@ header {
 }
 
 header a {
-    color:rgba(255, 255, 255, 0.8);
+    color:rgba(239, 245, 247, 0.8);
     text-decoration: none;
 }
 
 header a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(239, 245, 247, 1);
 }
 
 
@@ -62,9 +62,9 @@ main {
 
 /* HERO SECTION */
 .hero {
-    background-color: rgba(255, 58, 75);
+    background-color: rgba(30, 139, 195);
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(239, 245, 247, 1);
     padding: 6em 1em;
 }
 
@@ -78,6 +78,14 @@ main {
 .hero p {
     max-width: 30em;
     margin: 1em auto;
+}
+
+/* HOME PAGE */
+.page-home .hero {
+    background-image: url(https://media1.tenor.com/m/S3jQ2lRCxmsAAAAC/ghibli-ponyo.gif);
+    background-size: cover;
+    background-position: center;
+    padding: 6em 1em;
 }
 
 /* SUB PAGES */
