@@ -86,6 +86,8 @@ main {
     background-size: cover;
     background-position: center;
     padding: 6em 1em;
+    position: absolute;
+    width: 100%;
 }
 
 /* SUB PAGES */
