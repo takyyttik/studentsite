@@ -199,3 +199,47 @@ button:hover, a.button:hover {
     border-color: #003;
     text-decoration: none;
 }
+
+/* LAYOUT */
+/* 
+#MEDIA QUERIES (Mobile First)
+        #DEFAULT+ (Mobile First - Default Settings in the CSS Above)
+        #SMALL- (Mobile Only Overrides) - max-width: 767px
+        #MEDIUM+ (Tablet) - min-width: 768px
+        #LARGE+ (Desktop) - min-width: 1050px
+        #EXTRALARGE+ (Desktop+) - min-width: 1250px */
+/* SMALL+ (Mobile First Defaults) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* SMALL- MEDIA QUERY (e.g. for mobile overrides */
+@media (max-width: 767px) {
+    /* Inherits Small/Mobile Body Type from Above */
+    /* Inherits Small/Mobile Fluid Width from Above */
+}
+
+/* MEDIUM+ MEDIA QUERY */
+@media (max-width: 768px) {
+    /* Inherits Small/Mobile Body Type from Above */
+    /* Inherits Small/Mobile Fluid Width from Above */
+}
+
+/* LARGE+ MEDIA QUERY */
+@media (min-width: 1050px) {
+    /* LARGE BODY TYPE */
+    body {
+        font-size: 100%;
+        /* 16px; */
+    }
+}
