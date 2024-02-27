@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Base | Site</title>
+    <title>Base | Site w/ ToggleNav</title>
     <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects.">
 
     <!-- FOR MOBILE / SMALL SCREENS -->
@@ -13,11 +13,12 @@
     
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header toggle-nav">
         <div class="site-id">
             <h1><a href="#">Base Site</a></h1>
         </div>
         <nav class="site-navigation">
+            <button class="menu-button navicon">Menu</button>
             <ul class="nav">
                 <li class="hidden"><a href="#">Home</a></li>
                 <li><a href="#">Lorem</a></li>
@@ -79,5 +80,9 @@
         </div>
         <!-- END CONTAINER -->
     </footer>
+
+    <!--MAIN JS -->
+    <script src="js.script.js"></script>
 </body>
+
 </html>
