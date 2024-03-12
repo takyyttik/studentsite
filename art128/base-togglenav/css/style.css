@@ -438,7 +438,7 @@ body {
     margin-bottom: 1.5em;
 }
 .hero h1, .hero h2 {
-    font-style: 3em;
+    font-size: 3em;
     line-height: 1.1em;
     min-width: 10em;
 }
@@ -561,10 +561,10 @@ body {
         cursor: pointer;
     }
     .toggle-nav .menu-button::selection {
-        background-color: rgba(255 255 255 0);
+        background-color: rgba(255, 255, 255, 0);
     }
     .toggle-nav .menu-button.navicon {
-        color: rgba(255 255 255 0);
+        color: rgba(255, 255, 255, 0);
     }
     .toggle-nav .menu-button.navicon::after {
         color: #333;

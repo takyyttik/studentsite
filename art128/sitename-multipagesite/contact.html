@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base | Site w/ Sub Pages</title>
+    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects.">
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+</head>
+<body>
+    <header class="site-header toggle-nav animated">
+        <div class="site-id">
+            <h1><a href="index.html">Base Site</a></h1>
+        </div>
+        <nav class="site-navigation">
+            <button class="menu-button navicon">Menu</button>
+            <ul class="nav">
+                <li class="hidden"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="hero text-centered">
+            <h1>Contact Us</h1>
+            <p>This is a sub page example with contact form</p>
+        </section>
+        
+        <div class="container">
+            <div class="row">
+                <div class="two-third column centered">
+                    <form>
+                        <label for="contact_name">Name:</label>
+                        <input class="text" type="text" value="" name="contact_name" id="contact_name">
+
+                        <label for="contact_email">Email Address:</label>
+                        <input class="text" type="text" value="" name="contact_email" id="contact_email">
+
+                        <label for="contact_subject">Subject:</label>
+                        <input class="text" type="text" value="" name="contact_subject" id="contact_subject">
+
+                        <label for="contact_message">Message:</label>
+                        <textarea name="contact_message" id="contact_message"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="site-navigation">
+                <ul class="nav group">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- END CONTAINER -->
+    </footer>
+
+    <!--MAIN JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
