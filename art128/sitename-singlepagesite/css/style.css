@@ -31,6 +31,11 @@
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
 
+/* ENABLE SMOOTH SCROLLING */
+/* html {
+  scroll-behavior: smooth;
+} */
+
 /* TYPOGRAPHY */
 /* Reference
 	62.5%  => 10px
@@ -162,11 +167,76 @@ hr {
     margin: 2em 0;
 }
 
+/* #CODE */
+pre, code {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 0.875em;
+}
+
+pre {
+    margin: 1.5em 0 3em 0;
+    line-height: 1.2em;
+}
+
+code {
+    display: block;
+    padding: 1em 1.875em;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-left: 2px solid #ccc;
+    overflow-x: auto;
+}
+
+/* BLOCKED LOAD */
+.blocked body, .blocked h1, .blocked h2, .blocked h3, .blocked h4, .blocked h5, .blocked h6, .blocked p, .blocked a, .blocked .site-header a, .blocked .site-footer a, .blocked .site-id h1, .blocked .site-id h1 a, .blocked li, .blocked blockquote, .blocked a.button, .blocked a.button.alt, .blocked button {
+    color: #eee;
+    background-color: #eee;
+    border-color: #eee;
+}
+
 /* #MEDIA */
 /* #IMAGES */
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Image Floats */
+img.float-left {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+/* Clear Floats */
+.group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Circular Images */
+img.circular {
+    border-radius: 100%;
+}
+
+/* VIDEO */
+.video {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 1em;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* #COMPONENTS */
@@ -200,6 +270,77 @@ button:hover, a.button:hover {
     color: #fff;
     border-color: #003;
     text-decoration: none;
+}
+
+/* #ACCORDIAN */
+.accordian {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 2em;
+}
+.accordian + .accordian {
+    border-top: none;
+    margin-top: 0;
+}
+.accordian .collapsible {
+    opacity: 0;
+    max-height: 0;
+    transition: 0.3s ease-in-out all;
+    padding: 0 1.5em;
+    overflow: hidden;
+}
+.accordian.open .collapsible {
+    opacity: 1;
+    max-height: 2000px;
+    padding: 1em 1.5em 3em 1.5em;
+}
+.accordian h4 {
+    margin: 0;
+    padding: 1.5em 1em;
+}
+.accordian h4 span.light {
+    margin-left: 0.3em;
+    font-weight: normal;
+}
+.accordian h4:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+.accordian:last-of-type {
+    margin-bottom: 3em;
+}
+.accordian p:last-of-type {
+    margin-bottom: 0;
+}
+.accordian:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*ACCORDIAN ARROWS */
+.accordian .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #888;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+.accordian .arrow.up {
+    border-bottom: 5px solid #888;
+    border-top: none;
+    margin-bottom: 2px;
+}
+.accordian.open .arrow {
+    border-bottom: 5px solid #888;
+    border-top: none;
+    margin-bottom: 2px;
 }
 
 /* LAYOUT */
@@ -444,7 +585,7 @@ section {
     margin-bottom: 1.5em;
 }
 .hero h1, .hero h2 {
-    font-style: 3em;
+    font-size: 3em;
     line-height: 1.1em;
     min-width: 10em;
 }
@@ -459,6 +600,58 @@ section {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* FIXED header - works woth a class = "fixed" on .site-header */
+.site-header.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+  }
+  
+  .site-header.fixed + .site-main {
+    padding-top: 3em;
+  }
+  
+  /* Colored Sections */
+  section.superlightgrey {
+    background: #f9f9f9;
+    padding: 5em 0 2em 0;
+  }
+  
+  section.lightgrey {
+    background: #e0e0e0;
+    padding: 5em 0 2em 0;
+  }
+  
+  section.darkgrey {
+    background: #222;
+    color: #fff;
+    padding: 5em 0 2em 0;
+  }
+  section.darkgrey a.button {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  section.darkgrey a.button:hover {
+    background-color: white;
+  }
+  section.darkgrey a.button.alt {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  section.darkgrey a.button.alt:hover {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+  }
+  
+  section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
+    padding: 6em 1em 5em 1em;
+  }
+  
 
 /* Articles */
 article {
@@ -770,10 +963,10 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
         cursor: pointer;
     }
     .toggle-nav .menu-button::selection {
-        background-color: rgba(255 255 255 0);
+        background-color: rgba(255, 255, 255, 0);
     }
     .toggle-nav .menu-button.navicon {
-        color: rgba(255 255 255 0);
+        color: rgba(255, 255, 255, 0);
     }
     .toggle-nav .menu-button.navicon::after {
         color: #333;
@@ -884,3 +1077,72 @@ form input [type=reset]:hover {
     background-color: #003;
     border-color: #003;
 }
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  main {
+    /* call our keyframe named fade-in, use animation ease-in and repeat it only 1 time */
+    -webkit-animation: fade-in ease-in 1;
+    -moz-animation: fade-in ease-in 1;
+    animation: fade-in ease-in 1;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
+  
+/* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
+----------------------------------
+        #TYPOGRAPHY OVERRIDES
+            #@FONT-FACE
+        #BODY
+            #HEADINGS
+            #PARAGRAPHS
+    #LAYOUT OVERRIDES
+            #BODY
+            #CONTAINER
+    #NAVIGATION
+            # site-id
+            #SITE-NAVIGATION
+    #CONTENT
+            #SECTIONS
+---------------------------------- */
+/* Custom Overrides */
+/*
+body {
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+*/

@@ -11,4 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     //console.log('JS is ready')
+    //TOGGLE ACCORDIAN VIA ADDING/REMOVING A CLASS
+    var acc = document.querySelectorAll('.accordian');
+    var i;
+    for (i = 0; i < caches.length; i++) {
+        acc[i].getElementsByTagName('h4')[0].onclick = function () {
+            this.SVGComponentTransferFunctionElement.classList.toggle("open");
+        }
+    }
 });
