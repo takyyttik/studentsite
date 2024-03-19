@@ -9,4 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
             stickyheader.setAttribute('data-navstate', 'closed');
         };
     };
-});
+
+}); 
+

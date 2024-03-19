@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const start = root.scrollTop;
 
         //add offset
-        function haveClass(elem, className) {
+       function haveClass(elem, className) {
             return new RegExp(" " + className + " ").test(" " + elem.className + " ");
         }
         const siteheader = document.querySelector(".site-header");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             offset = document.querySelector(".site-id").offsetHeight + 15;
         } else {
             offset = 0;
-        }
+        } 
 
         const delta = (() => {
           if (hash.length < 2) return -start;

@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     //console.log('JS is ready')
+
+    // CLOSE THE MENU NAV WHEN A FIXED NAV LINK IS CLICKED
+    const fixednavlinks = document.querySelectorAll('.fixed nav a');
+    fixednavlinks.forEach(function(el) {
+        el.onclick = function() {
+          menunav.setAttribute('data-navstate', 'closed');
+        };
+    });
+        
     //TOGGLE ACCORDIAN VIA ADDING/REMOVING A CLASS
     var acc = document.querySelectorAll('.accordian');
     var i;

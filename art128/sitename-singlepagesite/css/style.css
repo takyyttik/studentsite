@@ -31,8 +31,12 @@
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
 
-/* ENABLE SMOOTH SCROLLING */
-/* html {
+/* ENABLE SMOOTH SCROLLING */ 
+footer {
+    min-height: 100vh;
+}
+/*
+html {
   scroll-behavior: smooth;
 } */
 
@@ -1115,6 +1119,12 @@ form input [type=reset]:hover {
     -webkit-animation-duration: 0.5s;
     -moz-animation-duration: 0.5s;
     animation-duration: 0.5s;
+  }
+
+  /* OFFSET SECTIONS WHEN HEADER IS FIXED */
+  .fixed + .site-main .section-title {
+    /* border: 2px solid red; */
+    margin-top: 2em;
   }
   
 /* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
