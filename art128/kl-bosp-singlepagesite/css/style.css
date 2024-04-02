@@ -506,7 +506,7 @@ section, .container {
 /* SITE STRUCTURE */
 /* Header& Footer */
 body {
-    background: #fff;
+    background: #ffffff;
 }
 
 /* Header & Footer */
@@ -568,7 +568,7 @@ body {
 
 /* Main Site Section (Main Content Area) */
 .site-main {
-    background: #fff;
+    background: #7fc5f7;
 }
 /* Main Sections */
 section {
@@ -583,7 +583,7 @@ section {
 }
 
 .hero {
-    background: #ddd;
+    background: #a8dfff;
     border-top: none;
     padding: 4em 1em 3em 1em;
     margin-bottom: 1.5em;
@@ -1082,6 +1082,65 @@ form input [type=reset]:hover {
     background-color: #003;
     border-color: #003;
 }
+
+/*GALLERY*/
+/* Forked from NMA Student Breann Lee's pen https://codepen.io/breann-nma/pen/OJdWxQG which was inspired by Pieter Biesemans original pen https://codepen.io/pieter-biesemans/pen/BQBWXX */
+
+.bosp-horizontal-scroll-section {
+    --nma-horizontal-scroll-section-height: 80vh;
+    --nma-horizontal-scroll-slide-gap: 2em;
+    overflow: hidden;
+    height: var(--nma-horizontal-scroll-section-height);
+  }
+  
+.bosp-horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+  /*   gap: 10vh; */
+    align-items: center;
+    justify-content: flex-start;
+    width: var(--nma-horizontal-scroll-section-height);
+    transform: rotate(-90deg) translate3d(0,calc(-1 * var(--nma-horizontal-scroll-section-height)),0);
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vw;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  /*   padding-bottom: 10rem; */
+  }
+   /* Hide scrollbar for Chrome, Safari and Opera */
+.bosp-horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.bosp-horizontal-scroll-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+  
+.bosp-scroll-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+  /*   min-height: 55vh; */
+    transform-origin: 50% 50%;
+    transform: rotate(90deg) translateZ(0px) scale(1);
+  /*   margin: 0 2em; */
+    padding: 0 var(--nma-horizontal-scroll-slide-gap);
+  /*   border-right: 2em solid red; */
+  /*   padding-right: 4em; */
+  }
+  
+.bosp-scroll-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: calc((var(--nma-horizontal-scroll-section-height))/2);
+  }
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fade-in {
