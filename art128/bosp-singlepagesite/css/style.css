@@ -33,7 +33,7 @@
 
 /* ENABLE SMOOTH SCROLLING */ 
 footer {
-    min-height: 20vh;
+    min-height: 10vh;
 }
 /*
 html {
@@ -251,8 +251,8 @@ button {
 
 button, a.button {
     display: inline-block;
-    background-color: #036;
-    border: 1px solid #036;
+    background-color: rgba(0, 20, 137, 1);
+    border: 1px solid rgba(0, 20, 137, 1);
     color: #fff;
     padding: 0.75em 1em;
     border-radius: 0.32em;
@@ -265,8 +265,8 @@ button, a.button {
 
 button.alt, a.button.alt {
     background-color: transparent;
-    border: 1px solid #036;
-    color: #036;
+    border: 1px solid rgba(0, 20, 137, 1);
+    color: rgba(0, 20, 137, 1);
 }
 
 button:hover, a.button:hover {
@@ -274,77 +274,6 @@ button:hover, a.button:hover {
     color: #fff;
     border-color: #003;
     text-decoration: none;
-}
-
-/* #ACCORDIAN */
-.accordian {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    margin-top: 2em;
-}
-.accordian + .accordian {
-    border-top: none;
-    margin-top: 0;
-}
-.accordian .collapsible {
-    opacity: 0;
-    max-height: 0;
-    transition: 0.3s ease-in-out all;
-    padding: 0 1.5em;
-    overflow: hidden;
-}
-.accordian.open .collapsible {
-    opacity: 1;
-    max-height: 2000px;
-    padding: 1em 1.5em 3em 1.5em;
-}
-.accordian h4 {
-    margin: 0;
-    padding: 1.5em 1em;
-}
-.accordian h4 span.light {
-    margin-left: 0.3em;
-    font-weight: normal;
-}
-.accordian h4:hover {
-    background: rgba(0, 0, 0, 0.03);
-    cursor: pointer;
-}
-.accordian:last-of-type {
-    margin-bottom: 3em;
-}
-.accordian p:last-of-type {
-    margin-bottom: 0;
-}
-.accordian:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*ACCORDIAN ARROWS */
-.accordian .arrow {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #888;
-    border-bottom: 1px solid transparent;
-    display: inline-block;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    margin-left: 0.5em;
-    margin-right: 0.2em;
-}
-.accordian .arrow.up {
-    border-bottom: 5px solid #888;
-    border-top: none;
-    margin-bottom: 2px;
-}
-.accordian.open .arrow {
-    border-bottom: 5px solid #888;
-    border-top: none;
-    margin-bottom: 2px;
 }
 
 /* LAYOUT */
@@ -508,20 +437,18 @@ section, .container {
 }
 
 /* SITE STRUCTURE */
-/* Header& Footer */
-body {
-    background: #ffffff;
-}
 
 /* Header & Footer */
-.site-header a, .site-footer a {
-    color: rgba(255, 255, 255, 0.8);
+body {
+    background: #a8dfff;
 }
-.site-footer h2 {
-    color: rgba(226, 227, 228, 1);
+.site-header a:hover {
+    color: rgba(90, 90, 90, 0.8);
+    text-decoration: none;
 }
-.site-header a:hover, .site-footer a:hover {
-    color: #003;
+
+.site-footer a:hover {
+    color: rgb(212, 212, 212, 0.8);
     text-decoration: none;
 }
 
@@ -530,6 +457,9 @@ body {
     background: #fff;
     border-bottom: 0px solid #ccc;
     padding: 0.5em 4%;
+}
+.site-header a {
+    color: rgba(0, 0, 0, 1);
 }
 @media (min-width: 768px) {
     .site-header {
@@ -548,7 +478,7 @@ body {
     font-weight: normal;
     font-style: normal;
     margin: 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 1);
     padding: 0.5em 0 0.4em 0;
 }
 .site-id h1 a {
@@ -564,6 +494,13 @@ body {
 .site-footer .container {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
+}
+.site-footer a {
+    color: rgba(255, 255, 255, 0.9);
+}
+.site-footer h2 {
+    color: rgba(226, 227, 228, 1);
+    text-align: center;
 }
 @media (min-width: 768px) {
     .site-footer .container {
@@ -612,13 +549,17 @@ section {
     margin-bottom: 0;
 }
 
+.hero.text-centered {
+    margin-bottom: 0;
+}
+
 /* FIXED header - works woth a class = "fixed" on .site-header */
 .site-header.fixed {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: rgba(0, 20, 137, 1);
+    background-color: #a8dfff;
   }
   
   .site-header.fixed + .site-main {
@@ -1045,66 +986,44 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     }
 }
 
-/* FORMS */
-form {
-    margin: 1.75em 0;
+
+/* ABOUT */
+#about {
+    background: #96d7fc;
 }
-form label {
-    display: block;
-}
-form input, form textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 1.15em;
-    display: block;
-    margin-bottom: 1.25em;
-    width: 100%;
-    color: #666;
-    padding: 0.35em;
-    border: 1px solid #ccc;
+#about h4 {
+    padding-top: 0.5em;
 }
 
-form textarea {
-    border: 1px solid #ccc;
-    min-height: 6em;
+/* TEAM */
+#team {
+    background: #88d3ff;
 }
 
-form input [type=button]
-form input [type=submit]
-form input [type=reset] {
-    width: auto;
-    background-color: #036;
-    border: 1px solid #036;
-    color: #fff;
-    padding: 0.75em 1em;
-    -webkit-border-radius: 0.32em;
-    -moz-border-radius: 0.32em;
-    border-radius: 0.32em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-form input [type=button]:hover,
-form input [type=submit]:hover,
-form input [type=reset]:hover {
-    background-color: #003;
-    border-color: #003;
-}
+/* EVENTS */
+/* Codepen from Waseem: Responsive Calendar with Events https://codepen.io/fabwaseem/pen/oNMMYOE */
+#events {
+    background: #7fc5f7;
+} 
 
 /*GALLERY*/
 /* Forked from NMA Student Breann Lee's pen https://codepen.io/breann-nma/pen/OJdWxQG which was inspired by Pieter Biesemans original pen https://codepen.io/pieter-biesemans/pen/BQBWXX */
+#gallery {
+    background: #63beff;
+    padding: 1em 0;
+}
+#gallery h1 {
+    text-align: center;
+    margin-bottom: 0;
+
+}
 
 .bosp-horizontal-scroll-section {
-    --bosp-horizontal-scroll-section-height: 100vh;
+    --bosp-horizontal-scroll-section-height: 80vh;
     --bosp-horizontal-scroll-slide-gap: 2em;
     overflow: hidden;
     height: var(--bosp-horizontal-scroll-section-height);
-    background: #7fc5f7;
   }
-
-.bosp-horizontal-scroll-section h1 {
-    text-align: center;
-}
-  
 .bosp-horizontal-scroll-wrapper {
     display: flex;
     flex-direction: column;
