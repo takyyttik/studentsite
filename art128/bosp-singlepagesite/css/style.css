@@ -986,6 +986,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     }
 }
 
+/* SITE MAIN */
 
 /* ABOUT */
 #about {
@@ -1001,10 +1002,18 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 }
 
 /* EVENTS */
-/* Codepen from Waseem: Responsive Calendar with Events https://codepen.io/fabwaseem/pen/oNMMYOE */
 #events {
     background: #7fc5f7;
+    padding-bottom: 4em;
 } 
+.calender {
+    display: grid;
+    place-items: center;
+}
+.calender img {
+    width: 600px;
+    height: auto;
+}
 
 /*GALLERY*/
 /* Forked from NMA Student Breann Lee's pen https://codepen.io/breann-nma/pen/OJdWxQG which was inspired by Pieter Biesemans original pen https://codepen.io/pieter-biesemans/pen/BQBWXX */
