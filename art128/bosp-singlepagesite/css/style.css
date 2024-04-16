@@ -53,7 +53,7 @@ html {
 */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgba(68, 68 6,1);
     font-size: 87.5%;
     /* 14px; */
@@ -65,7 +65,7 @@ body {
     Based on Traditional Typographic Scale
     48, 36, 24, 21, 18, 16 */
 h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0.5em 0;
 }
 
@@ -513,6 +513,7 @@ body {
 /* Main Site Section (Main Content Area) */
 .site-main {
     background: #7fc5f7;
+
 }
 /* Main Sections */
 section {
@@ -680,7 +681,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     padding-bottom: 5em;
 }
 .subpage-navigation {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0;
 }
 .subpage-navigation ul {
@@ -812,7 +813,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 /* #SITE NAVIGATION */
 /* Default Site Navigation Menu (both header & footer) */
 .site-navigation {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .site-navigation .menu-button {
     display: none;
@@ -986,7 +987,16 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     }
 }
 
-/* SITE MAIN */
+/* SITE-MAIN */
+.journals {
+    background: #a8dfff;
+    display: flex;
+    justify-content: space-between;
+}
+.journals img{
+    height: 250px;
+    width: auto;
+}
 
 /* ABOUT */
 #about {
@@ -994,6 +1004,12 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 }
 #about h4 {
     padding-top: 0.5em;
+}
+#about img {
+    float: right;
+}
+#about ul {
+    padding-inline-end: 20em;
 }
 
 /* TEAM */
@@ -1006,6 +1022,12 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     background: #7fc5f7;
     padding-bottom: 4em;
 } 
+#events {
+    background-image: url(https://images.unsplash.com/photo-1523318985288-c572e7d4b44e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    
+}
 .calender {
     display: grid;
     place-items: center;
