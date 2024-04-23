@@ -30,7 +30,6 @@
         #SITE NAVIGATION
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
-
 /* ENABLE SMOOTH SCROLLING */ 
 footer {
     min-height: 10vh;
@@ -53,8 +52,11 @@ html {
 */
 
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgba(68, 68 6,1);
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* color: rgba(68, 68 6, 1); */
+    /* color: #fff; */
     font-size: 87.5%;
     /* 14px; */
     line-height: 1.5;
@@ -65,7 +67,9 @@ body {
     Based on Traditional Typographic Scale
     48, 36, 24, 21, 18, 16 */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: freight-text-pro, serif;
+    font-weight: 600;
+    font-style: normal;
     margin: 0.5em 0;
 }
 
@@ -496,10 +500,10 @@ body {
     padding-bottom: 0.25em;
 }
 .site-footer a {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(244, 244, 244, 1);
 }
 .site-footer h2 {
-    color: rgba(226, 227, 228, 1);
+    color: rgba(244, 244, 244, 1);
     text-align: center;
 }
 @media (min-width: 768px) {
@@ -528,18 +532,26 @@ section {
 }
 
 .hero {
-    background: #a8dfff;
+    /* background: #a8dfff; */
+    background-color: rgba(26, 39, 51, 0.8);
+    background-image: url(../img/bg-hero.jpg);
+    background-size: cover;
     border-top: none;
-    padding: 4em 1em 3em 1em;
+    padding: 0em 1em 10em 1em;
     margin-bottom: 1.5em;
+    min-height: 93svh;
+    display: grid;
+    place-items: center;
 }
 .hero h1, .hero h2 {
     font-size: 3em;
     line-height: 1.1em;
     min-width: 10em;
+    color: rgba(255, 255, 255, 1);
 }
 .hero p {
     max-width: 22em;
+    color: rgba(255, 255, 255, 1);
 }
 .hero.text-centered h1, .hero.text-centered h2, .hero.text-centered h3, .hero.text-centered h4, .hero.text-centered h5, .hero.text-centered h6, .hero.text-centered p {
     margin-left: auto;
@@ -560,7 +572,8 @@ section {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: #a8dfff;
+    /* background-color: #a8dfff; */
+    background-color: rgba(226, 227 228, 1) ;
   }
   
   .site-header.fixed + .site-main {
@@ -681,7 +694,9 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     padding-bottom: 5em;
 }
 .subpage-navigation {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding: 0;
 }
 .subpage-navigation ul {
@@ -813,7 +828,9 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 /* #SITE NAVIGATION */
 /* Default Site Navigation Menu (both header & footer) */
 .site-navigation {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .site-navigation .menu-button {
     display: none;
@@ -1000,7 +1017,11 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 
 /* ABOUT */
 #about {
-    background: #96d7fc;
+    /* background: #96d7fc; */
+    background-color: rgba(244, 244, 244, 1);
+}
+#about body {
+    color: rgba(68, 68 6, 1);
 }
 #about h4 {
     padding-top: 0.5em;
@@ -1014,33 +1035,42 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 
 /* TEAM */
 #team {
-    background: #88d3ff;
+    /* background: #88d3ff; */
+    background-color: rgba(244, 244, 244, 1);
 }
 
 /* EVENTS */
 #events {
-    background: #7fc5f7;
+    /* background: #7fc5f7; */
+    background-color: rgba(244, 244, 244, 1);
     padding-bottom: 4em;
 } 
 #events {
     background-image: url(https://images.unsplash.com/photo-1523318985288-c572e7d4b44e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
-    
 }
 .calender {
     display: grid;
     place-items: center;
 }
 .calender img {
-    width: 600px;
+    width: 650px;
     height: auto;
+}
+
+/* EVENTS 2 */
+#events2 {
+    /* background: #7fc5f7; */
+    background-color: rgba(244, 244, 244, 1);
+    padding-bottom: 4em;
 }
 
 /*GALLERY*/
 /* Forked from NMA Student Breann Lee's pen https://codepen.io/breann-nma/pen/OJdWxQG which was inspired by Pieter Biesemans original pen https://codepen.io/pieter-biesemans/pen/BQBWXX */
 #gallery {
-    background: #63beff;
+    /* background: #63beff; */
+    background-color: rgb(244, 244, 244, 1);
     padding: 1em 0;
 }
 #gallery h1 {
