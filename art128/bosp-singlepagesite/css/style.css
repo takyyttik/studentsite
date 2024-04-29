@@ -1019,10 +1019,18 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 #about {
     /* background: #96d7fc; */
     background-color: rgba(244, 244, 244, 1);
+    /* GRADIENT
+    background: rgba(26, 39, 51, 1);
+    background: -webkit-linear-gradient(top, rgba(26, 39, 51, 1), rgba(244, 244, 244, 1));
+    background: linear-gradient(to bottom, rgba(26, 39, 51, 0.9), rgba(244, 244, 244, 1)); */
 }
+
 #about body {
     color: rgba(68, 68 6, 1);
 }
+/* #about .section-title {
+    color: rgba(244, 244, 244, 1);
+} */
 #about h4 {
     padding-top: 0.5em;
 }
@@ -1037,6 +1045,17 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 #team {
     /* background: #88d3ff; */
     background-color: rgba(244, 244, 244, 1);
+
+    /* GRADIENT INTO EVENTS1
+    background: rgba(244, 244, 244, 1);
+    background: -webkit-linear-gradient(top, rgba(244, 244, 244, 1), rgba(164, 203, 246, 1));
+    background: linear-gradient(to bottom, rgba(244, 244, 244, 1), rgba(164, 203, 246, 1)); */
+
+    /* GRADIENT EVENTS2 COLORED VERSION 
+     background: rgba(244, 244, 244, 1);
+    background: -webkit-linear-gradient(top, rgba(244, 244, 244, 1), rgba(30, 122, 175, 0.1));
+    background: linear-gradient(to bottom, rgba(244, 244, 244, 1), rgba(30, 122, 175, 0.1)); */
+
 }
 
 /* EVENTS */
@@ -1063,6 +1082,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 #events2 {
     /* background: #7fc5f7; */
     background-color: rgba(244, 244, 244, 1);
+    /* background-color: rgba(30, 122, 175, 0.1); */
     padding-bottom: 4em;
 }
 
