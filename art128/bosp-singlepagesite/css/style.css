@@ -268,9 +268,20 @@ button, a.button {
 }
 
 button.alt, a.button.alt {
-    background-color: transparent;
+    /* background-color: transparent;
     border: 1px solid rgba(0, 20, 137, 1);
+    color: rgba(0, 20, 137, 1); */
+    display: inline-block;
+    background-color: rgba(226, 227, 228, 1);
+    border: 1px solid rgba(226, 227, 228, 1);
     color: rgba(0, 20, 137, 1);
+    padding: 0.75em 1em;
+    border-radius: 0.32em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
 }
 
 button:hover, a.button:hover {
@@ -1096,10 +1107,10 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 #gallery {
     /* background: #63beff; */
     background-color: rgba(244, 244, 244, 1);
-    background-image: url(../img/bg-gallery-3.jpg);
+    background-image: url(../img/bg-gallery-4.jpg);
     background-size: cover;
     border-top: none;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     background-position: center;
 }
 #gallery h1 {
@@ -1116,7 +1127,6 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 .bosp-horizontal-scroll-wrapper {
     display: flex;
     flex-direction: column;
-  /*   gap: 10vh; */
     align-items: center;
     justify-content: flex-start;
     width: var(--bosp-horizontal-scroll-section-height);
