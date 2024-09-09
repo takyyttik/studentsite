@@ -429,6 +429,8 @@ body {
 /* Main Site Section (Main Content Area) */
 .site-main {
     background: rgba(234, 245, 251, 1);
+    margin-top: 5.5em;
+    margin-bottom: 5.5em;
 }
 /* Main Sections */
 section {
@@ -452,9 +454,10 @@ section {
     font-style: 3em;
     line-height: 1.1em;
     min-width: 10em;
+    max-width: 20em;
 }
 .hero p {
-    max-width: 22em;
+    max-width: 20em;
 }
 .hero.text-centered h1, .hero.text-centered h2, .hero.text-centered h3, .hero.text-centered h4, .hero.text-centered h5, .hero.text-centered h6, .hero.text-centered p {
     margin-left: auto;
