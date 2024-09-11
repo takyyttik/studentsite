@@ -439,13 +439,13 @@ section {
 .container .hero {
     position: relative;
     top: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .hero {
     /* background: rgba(223, 236, 253, 1); */
     border-top: none;
-    padding: 4em 1em 3em 1em;
+    padding: 2em 1em 2em 1em;
     margin-bottom: 1.5em;
 }
 .hero h1, .hero h2 {
