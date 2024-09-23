@@ -43,8 +43,10 @@
 	125%   => 20px
 */
 
+
 body {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: "tiffin-latin-variable", serif;
+    font-variation-settings: "wght" 350;
     color: #333;
     font-size: 87.5%;
     /* 14px; */
@@ -56,7 +58,8 @@ body {
     Based on Traditional Typographic Scale
     48, 36, 24, 21, 18, 16 */
 h1, h2, h3, h4, h5, h6 {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: "tiffin-latin-variable", serif;
+    font-variation-settings: "wght" 300;
     margin: 0.5em 0;
 }
 
@@ -177,8 +180,8 @@ button {
 
 button, a.button {
     display: inline-block;
-    background-color: rgba(183, 88, 88, 1);
-    border: 1px solid rgba(183, 88, 88, 1);
+    background-color: rgb(144 23 56);
+    border: 1px solid rgb(144 23 56);
     color: #fff;
     padding: 0.75em 1em;
     border-radius: 0.32em;
@@ -191,14 +194,14 @@ button, a.button {
 
 button.alt, a.button.alt {
     background-color: transparent;
-    border: 1px solid rgba(183, 88, 88, 1);
-    color: rgba(115, 65, 65, 1);
+    border: 1px solid rgb(144 23 56);
+    color: rgb(144 23 56);
 }
 
 button:hover, a.button:hover {
-    background-color: rgba(115, 65, 65, 1);
+    background-color: rgb(238 41 97);
     color: #fff;
-    border-color: rgba(115, 65, 65, 1);
+    border-color: rgb(238 41 97);
     text-decoration: none;
 }
 
@@ -440,9 +443,23 @@ body {
 
 .landing .site-main {
     margin-top: 0;
-    margin-bottom: 1em;
     h2 {
         margin-top: 0;
+        
+        color: rgb(241, 251, 234);
+    }
+    p {
+        color: rgb(241, 251, 234);
+    }
+}
+
+.landing .site-footer {
+    a {
+        color: rgb(241, 251, 234);
+    }
+    a:hover {
+        color: rgb(171, 55, 99);
+        text-decoration: none;
     }
 }
 
@@ -556,7 +573,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
     padding-bottom: 5em;
 }
 .subpage-navigation {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: "tiffin-latin-variable", serif;
     padding: 0;
 }
 .subpage-navigation ul {
@@ -688,7 +705,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
 /* #SITE NAVIGATION */
 /* Default Site Navigation Menu (both header & footer) */
 .site-navigation {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: "tiffin-latin-variable", serif;
 }
 .site-navigation .menu-button {
     display: none;
@@ -744,7 +761,7 @@ article p + h2, article p + h3, article p + h4, article p + h5, article p + h6 {
         background: #fff;
     }
     .site-navigation ul li ul a {
-        color: #ffffff;
+        color: rgb(241, 251, 234);
     }
     .site-navigation ul li:hover a {
         left: auto;
@@ -870,7 +887,7 @@ form label {
     display: block;
 }
 form input, form textarea {
-    font-family: system-ui, Arial, Helvetica, sans-serif;
+    font-family: "tiffin-latin-variable", serif;
     font-size: 1em;
     line-height: 1.15em;
     display: block;

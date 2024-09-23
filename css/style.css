@@ -4,8 +4,8 @@ body {margin: 0; }
 
 /* GLOBAL COLORS */
 body { color:rgba(0, 0, 0, 0.8); }
-a { color: rgba(30, 139, 195); }
-a:hover { color: rgba(44, 130, 201); }
+a { color: rgb(144 23 56); }
+a:hover { color: rgb(238 41 97) }
 
 /* GLOBAL TYPOGRAPHY */
 body {
