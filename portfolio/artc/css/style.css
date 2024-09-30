@@ -43,9 +43,10 @@
 	125%   => 20px
 */
 
+
 body {
-    font-family: "tiffin-latin-variable", serif;
-    font-variation-settings: "wght" 350;
+    font-family: "antonia-variable", serif;
+    font-variation-settings: "opsz" 8, "wght" 325;
     color: #333;
     font-size: 87.5%;
     /* 14px; */
@@ -54,11 +55,11 @@ body {
 }
 
 /* HEADINGS
-    Based on Traditional Typographic Scale
-    48, 36, 24, 21, 18, 16 */
+Based on Traditional Typographic Scale
+48, 36, 24, 21, 18, 16 */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "tiffin-latin-variable", serif;
-    font-variation-settings: "wght" 300;
+    font-family: "antonia-variable", serif;
+    font-variation-settings: "opsz" 16, "wght" 350;
     margin: 0.5em 0;
 }
 
@@ -223,6 +224,7 @@ button:hover, a.button:hover {
 
 body {
     margin: 0;
+    text-wrap: pretty;
 }
 
 .container {
@@ -379,7 +381,7 @@ body {
     color: #333;
 }
 .site-header a:hover, .site-footer a:hover {
-    color: rgb(171, 55, 99);
+    color: rgb(171 55 99);
     text-decoration: none;
 }
 
@@ -424,6 +426,11 @@ body {
     padding-top: 0.25em;
     padding-bottom: 0.25em;
 }
+
+.site-footer ul.nav.group {
+    padding-bottom: 1svh;
+}
+
 @media (min-width: 768px) {
     .site-footer .container {
         display: flex;

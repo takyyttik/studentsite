@@ -4,7 +4,7 @@ body {margin: 0; }
 
 /* GLOBAL COLORS */
 body { color:rgba(0, 0, 0, 0.8); }
-a { color: rgb(144 23 56); }
+a { color: rgb(49, 5, 17); }
 a:hover { color: rgb(238 41 97) }
 
 /* GLOBAL TYPOGRAPHY */
@@ -18,7 +18,7 @@ body {
 /* SITE STRUCTURE */
 
 header {
-    background-color: rgba(30, 139, 195);
+    background-color: rgb(171 55 99);
     color: rgba(255, 255, 255, 0.8);
     padding: 1em;
     display: grid;
